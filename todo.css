@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #f1e203;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category {
+    margin-top: 20px;
+}
+
+.taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+input[type="text"] {
+    width: calc(100% - 50px);
+    padding: 10px;
+    border: 1px solid #ad0505;
+    border-radius: 4px;
+}
+
+
+.remove {
+    background-color: #d60902;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.remove:hover {
+    background-color: #c9302c;
+}
+
+button {
+    background-color: #04f504;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#addTaskButton {
+    background-color: #007bff; 
+}
+
+#addTaskButton:hover {
+    background-color: #00b327;
+}
+#addTaskButton:active {
+    background-color: #ee1e03;
+}
+
+
+.category-buttons button {
+    flex: 1; 
+    margin: 5px; 
+    min-width: 120px; 
+    background-color: #2e04e9;
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+.category-buttons button:hover {
+    background-color: #4cae4c; 
+}
+.category-buttons button:active {
+    background-color: #06f040; 
+}
+

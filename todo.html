@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+
+    <h1>To-Do List</h1>
+
+    <div class="container">
+                <input type="text" id="taskInput" placeholder="Add a new task...">
+<button id="addTaskButton" onclick="addTask()">Add Task</button>
+
+<div class="category-buttons">
+    <button id="morningButton" onclick="setCategory('morningTasks')">Morning Routine</button>
+    <button id="workStudyButton" onclick="setCategory('workStudyTasks')">Work/Study</button>
+    <button id="personalDevButton" onclick="setCategory('personalDevTasks')">Personal Development</button>
+    <button id="errandsButton" onclick="setCategory('errandsTasks')">Errands</button>
+    <button id="eveningButton" onclick="setCategory('eveningTasks')">Evening Routine</button>
+    <button id="otherButton" onclick="setCategory('otherTasks')">Other Tasks</button>
+</div>
+
+        
+        <div class="category">
+            <h3>Morning Routine</h3>
+            <ul id="morningTasks" class="taskList"></ul>
+        </div>
+
+        <div class="category">
+            <h3>Work/Study Tasks</h3>
+            <ul id="workStudyTasks" class="taskList"></ul>
+        </div>
+
+        <div class="category">
+            <h3>Personal Development</h3>
+            <ul id="personalDevTasks" class="taskList"></ul>
+        </div>
+
+        <div class="category">
+            <h3>Errands</h3>
+            <ul id="errandsTasks" class="taskList"></ul>
+        </div>
+
+        <div class="category">
+            <h3>Evening Routine</h3>
+            <ul id="eveningTasks" class="taskList"></ul>
+        </div>
+
+        <div class="category">
+            <h3>Other Tasks</h3>
+            <ul id="otherTasks" class="taskList"></ul>
+        </div>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
